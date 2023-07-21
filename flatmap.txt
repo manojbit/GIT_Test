@@ -1,0 +1,11 @@
+There are primitive variants of map methods mapToInt, mapToDouble and
+ mapToLong that we will see later.
+ Stream interface has method flatMap which returns a stream
+  consisting of the results of replacing each element of this stream with the
+   contents of a mapped stream produced by applying the provided mapping function to
+each element.
+ Sometime each element of a stream will produce individual streams
+  that will be amalgamated into single stream and flatMap will be used there.
+It might be confusing you now so let see an example where you need to
+ find distinct words contained in a file. Here we will use File.lines() which will
+  return Stream<String> where each element will represent to a single line of the file.
